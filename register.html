@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Register form</title>
+        
+    </head>
+    
+    <body  style = "font-family:new century schoolbook;">
+    <div class="signup">
+  <div class="signup-connect">
+    <h2>Create An Account</h2>
+<form method="post" action="AddRegis">
+        <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <label for="name"><b>Name:</b></label>
+    <input type="text" placeholder="Username" name="Name" required>
+  </div></br>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <label for="email"><b>Email Id:</b></label>
+   <input type="text" placeholder="Email" name="Email" required>
+  </div></br>
+
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <label for="pass"><b>Password:</b></label>
+    <input type="password" placeholder="Password" name="Pass" required>
+  </div></br>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+     <label for="mobile no"><b>Mobile No:</b></label>
+    <input type="mobile no" placeholder="Mobile No" name="Mobile No" required>
+  </div></br>
+       
+   
+       
+      <script>
+
+  function checkForm(form)
+  {
+    ...
+    if(!form.terms.checked) {
+      alert("Please indicate that you accept the Terms and Conditions");
+      form.terms.focus();
+      return false;
+    }
+    return true;
+  }
+
+</script>
+
+<form ... onsubmit="return checkForm(this);">
+...
+<p><input type="checkbox" name="terms"> I accept the <u>Terms and Conditions</u></p>
+
+<button type="submit" class="btn">Sign up</button></div></div></br>
+</form>
+    <div class="col">
+    <a href="#" style="color:white" class="btn">Forget Password?</a>
+    </div>
+    </form>
+       
+    </body>
+</html>
